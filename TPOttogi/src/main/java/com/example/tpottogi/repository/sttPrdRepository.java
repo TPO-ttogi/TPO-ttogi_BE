@@ -3,6 +3,9 @@ package com.example.tpottogi.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
-public interface SituationRepository extends JpaRepository<Situation, Long> {
+public interface sttPrdRepository extends JpaRepository<sttPrd, Long> {
+    List<sttPrd> findBySituation(Situation situation);
 }

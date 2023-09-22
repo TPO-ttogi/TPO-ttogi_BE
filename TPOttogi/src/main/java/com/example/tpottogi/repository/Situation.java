@@ -1,11 +1,8 @@
-package com.example.tpottogi.entity;
+package com.example.tpottogi.repository;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Getter
 @NoArgsConstructor
@@ -19,7 +16,4 @@ public class Situation {
     private String stt_code;
 
     private String stt_name;
-
-    @OneToMany(mappedBy = "situation")
-    private List<Product> productList=new ArrayList<>();
 }
