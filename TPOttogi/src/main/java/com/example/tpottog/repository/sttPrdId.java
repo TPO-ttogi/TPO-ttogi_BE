@@ -1,0 +1,19 @@
+package com.example.tpottog.repository;
+
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode
+public class sttPrdId implements Serializable {
+    private Situation situation;
+
+    private Product product;
+}
