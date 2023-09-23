@@ -1,4 +1,4 @@
-package com.example.tpottog.repository;
+package com.example.tpottogi.repository;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -22,5 +22,7 @@ public class Product {
     private String link;
 
     private String feature;
+
+    private String sessionAvg;
 
 }

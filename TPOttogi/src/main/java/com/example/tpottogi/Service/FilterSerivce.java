@@ -1,8 +1,8 @@
-package com.example.tpottog.Service;
+package com.example.tpottogi.Service;
 
-import com.example.tpottog.dto.ProductDetailDto;
-import com.example.tpottog.dto.ProductDto;
-import com.example.tpottog.repository.*;
+import com.example.tpottogi.dto.ProductDetailDto;
+import com.example.tpottogi.dto.ProductDto;
+import com.example.tpottogi.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -49,7 +49,11 @@ public class FilterSerivce {
         Product product=productRepository.findById(id).get();
         String cleanedFileName = product.getName_en().replaceAll("[^\\w]", "");
         String imageUrl="https://tpottogi.s3.ap-northeast-2.amazonaws.com/product/"+cleanedFileName+ ".jpg";
-        ProductDetailDto productDetailDto=new ProductDetailDto(product.getId(), product.getName_en(), product.getFood_en(), product.getFood_kr(), imageUrl);
+        String sessionAvg="0";
+        if (product.getSessionAvg()!=null){
+            sessionAvg=product.getSessionAvg();
+        }
+        ProductDetailDto productDetailDto=new ProductDetailDto(product.getId(), product.getName_en(), product.getFood_en(), product.getFood_kr(), imageUrl, sessionAvg);
         return productDetailDto;
     }
 

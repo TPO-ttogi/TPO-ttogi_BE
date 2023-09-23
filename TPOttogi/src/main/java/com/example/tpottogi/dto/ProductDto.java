@@ -1,6 +1,5 @@
-package com.example.tpottog.dto;
+package com.example.tpottogi.dto;
 
-import com.example.tpottog.repository.Product;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

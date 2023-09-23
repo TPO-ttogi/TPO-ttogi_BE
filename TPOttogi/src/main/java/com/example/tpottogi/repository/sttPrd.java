@@ -1,4 +1,4 @@
-package com.example.tpottog.repository;
+package com.example.tpottogi.repository;
 
 import jakarta.persistence.*;
 import lombok.Getter;

@@ -1,22 +1,17 @@
-package com.example.tpottog.repository;
+package com.example.tpottogi;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Getter
 @NoArgsConstructor
 @Entity
-@Table(name = "situation")
-public class Situation {
+@Table(name = "test")
+public class test {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String stt_code;
-
-    private String stt_name;
+    private String text;
 }

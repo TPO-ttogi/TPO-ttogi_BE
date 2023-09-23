@@ -1,8 +1,8 @@
-package com.example.tpottog.controller;
+package com.example.tpottogi.controller;
 
-import com.example.tpottog.Service.FilterSerivce;
-import com.example.tpottog.dto.ProductDetailDto;
-import com.example.tpottog.dto.ProductDto;
+import com.example.tpottogi.Service.FilterSerivce;
+import com.example.tpottogi.dto.ProductDetailDto;
+import com.example.tpottogi.dto.ProductDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

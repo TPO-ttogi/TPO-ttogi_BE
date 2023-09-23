@@ -1,4 +1,4 @@
-package com.example.tpottog;
+package com.example.tpottogi.repository;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -7,11 +7,13 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @Entity
-@Table(name = "test")
-public class test {
+@Table(name = "situation")
+public class Situation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String text;
+    private String stt_code;
+
+    private String stt_name;
 }

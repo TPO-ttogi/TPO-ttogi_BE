@@ -1,4 +1,4 @@
-package com.example.tpottog.dto;
+package com.example.tpottogi.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,11 +16,14 @@ public class ProductDetailDto {
 
     private String imageUrl;
 
-    public ProductDetailDto(Long id, String name_en, String food_en, String food_kr, String imageUrl) {
+    private String sessionAvg;
+
+    public ProductDetailDto(Long id, String name_en, String food_en, String food_kr, String imageUrl, String sessionAvg) {
         this.id = id;
         this.name_en = name_en;
         this.food_en = food_en;
         this.food_kr = food_kr;
         this.imageUrl = imageUrl;
+        this.sessionAvg=sessionAvg;
     }
 }

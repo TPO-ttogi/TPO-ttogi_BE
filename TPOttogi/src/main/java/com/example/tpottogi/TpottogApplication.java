@@ -1,4 +1,4 @@
-package com.example.tpottog;
+package com.example.tpottogi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
